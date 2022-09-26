@@ -1,0 +1,51 @@
+.services {
+    padding-top: 0;
+
+&__list {
+    display: inline-flex;
+}
+
+
+&__item {
+    position: relative;
+    z-index: -100;
+
+    &:not(:last-child) {
+    margin-right: 30px;
+}
+
+}
+
+
+&__text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--bg-white);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+}
+
+
+
+
+
+
+
