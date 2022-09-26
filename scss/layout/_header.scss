@@ -10,7 +10,11 @@
     }
 
 &__contacts {
-    display: flex;
+    display: none;
+    @media screen and (min-width:$tablet){
+    display: flex; 
+    }
+   
     margin-top: 32px;
     margin-bottom: 32px;
     margin-left: auto;
@@ -51,30 +55,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 .header .container {
@@ -87,7 +67,11 @@
     align-items: center;
 
 &__list {
-    display: flex;
+    display: none;
+    @media screen and (min-width:$tablet) {
+    display: flex;  
+    }
+
     height: 100%;}
 
 &__item {
