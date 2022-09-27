@@ -6,13 +6,19 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    max-width: 528px;
-    min-height: 581px;
+    max-width: 450px;
+    min-height: 609px;
     width: 100%;
     height: auto;
     padding: 40px;
     background-color: var(--bg-white);
     transform: translate(-50%, -50%) scale(1);
+
+    @media screen and(min-width:$desktop) {
+    max-width: 528px;
+    min-height: 581px;
+
+    }
 
 
 &__close {
@@ -83,13 +89,17 @@
 
 .field__input {
     position: relative;
-    width: 448px;
+    width: 370px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
     outline: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and(min-width:$desktop) {
+            width: 448px;
+    }
 
 
 &:not(:first-child) {
@@ -101,7 +111,7 @@
 
 
 .field__coments {
-    width: 448px;
+    width: 370px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -115,6 +125,10 @@
     color: var(--black);
     outline: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and(min-width:$desktop) {
+        width: 448px;
+    }
 
 
 &::placeholder {
@@ -131,12 +145,15 @@
 
 .agreement__label {
     position: relative;
-    width: 425px;
+    width: 370px;
     height: 24px;
     margin-bottom: 30px;
     text-align: center;
-
     display: inline-block;
+
+    @media screen and(min-width:$desktop) {
+    width: 425px;
+    }
 }
 
 
@@ -170,32 +187,44 @@
     fill: var(--bg-white);
 }
 
-
 }
-
-
 
 
 .agreement__text {
     /* display: inline-block; */
     margin-bottom: 30px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 0.85;
+        letter-spacing: 0.03em;
+        color: var(--base-text);
 
-    font-weight: 400;
+
+
+    @media screen and(min-width:$desktop) {
     font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: var(--base-text);
+    line-height: 0.07;
+    }
+
+
 
 }
 
 .agreement__link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 0.85;
+        letter-spacing: 0.03em;
+        text-decoration-line: underline;
+        color: var(--accent-color);
 
-    letter-spacing: 0.03em;
-    text-decoration-line: underline;
-    color: var(--accent-color);
+
+@media screen and(min-width:$desktop) {
+    font-size: 14px;
+        line-height: 0.07;
+
+}
+
 }
 
 .button__container {
