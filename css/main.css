@@ -218,6 +218,9 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   fill: var(--black);
 }
+.modal__close:hover, .modal__close:focus {
+  fill: var(--accent-color);
+}
 .modal__title {
   font-weight: 700;
   font-size: 20px;
@@ -1121,6 +1124,7 @@ a {
             align-items: start;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    height: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1202,7 +1206,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .location__list {
