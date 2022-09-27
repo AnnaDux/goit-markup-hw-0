@@ -452,7 +452,7 @@ a {
 }
 
 .header {
-  min-width: 1600;
+  max-width: 1600;
   border-bottom: 1px solid #ececec;
   height: 60px;
 }
@@ -782,7 +782,13 @@ a {
 }
 
 .services {
+  display: none;
   padding-top: 0;
+}
+@media screen and (min-width: 1200px) {
+  .services {
+    display: block;
+  }
 }
 .services__list {
   display: -webkit-inline-box;
