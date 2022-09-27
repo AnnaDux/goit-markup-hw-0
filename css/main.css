@@ -95,11 +95,21 @@ a {
 
 .container {
   /* outline: 2px solid purple;   */
-  max-width: 1200px;
+  max-width: 480px;
   width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .logo {
@@ -116,6 +126,18 @@ a {
 
 .logo--light {
   color: var(--bg-white);
+}
+
+.burger {
+  cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+  fill: var(--secondary-text);
+}
+@media screen and (min-width: 768px) {
+  .burger {
+    display: none;
+  }
 }
 
 .backdrop {
@@ -431,8 +453,13 @@ a {
 
 .header {
   min-width: 1600;
-  max-height: 80px;
   border-bottom: 1px solid #ececec;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    height: auto;
+  }
 }
 .header__logo {
   padding-top: 24px;
@@ -456,10 +483,30 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 .header .contacts__item {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--base-text);
   font-weight: 500;
   line-height: 0.07;
@@ -467,8 +514,10 @@ a {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header .contacts__item:first-child {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .header .contacts__item:first-child {
+    margin-right: 50px;
+  }
 }
 .header .contacts__item:hover, .header .contacts__item:focus {
   font-weight: 500;
@@ -484,12 +533,24 @@ a {
 }
 
 .header .container {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .header .container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    height: auto;
+  }
 }
 
 .nav {

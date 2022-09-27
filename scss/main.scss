@@ -7,12 +7,14 @@
 @import "./base/container";
 //components
 @import "./components/logo";
-@import "./components/burger-btn";
+@import "./components/burger-menu";
 @import "./components/backdrop";
 @import "./components/title";
 @import "./components/button";
 @import "./components/modal";
 @import "./components/menu";
+
+
 //adaptive
 @import "./utils/breakpoints";
 //layout
