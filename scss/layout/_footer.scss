@@ -112,8 +112,6 @@
         margin-top: 12px; 
     } 
 }
-
-
 }
 
 
@@ -121,18 +119,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 60px;
     
 
     @media screen and (min-width:$desktop) {
         align-items: start;
     }
 }
-
-
-
-
-
-
 
 .location__item:not(:last-child){
     margin-bottom: 9px;
