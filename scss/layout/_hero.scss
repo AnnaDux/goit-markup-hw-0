@@ -1,22 +1,22 @@
 .hero {
+    max-width: 1600px;
     background-color: var(--bg-dark);
     text-align: center;
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
-
-        @media screen and (min-width:$desktop) {
+    @media screen and (min-width:$desktop) {
          margin-bottom: 0;
+       
         }
-
+                       
 
 &__bg-img {
-    max-width: 480px;
-    width:100%;
-    max-height: 400px;
+    width: 480px;
+    height: 400px;
     padding-top: 118px;
     padding-bottom: 60px;
-
+    background-size: cover;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero_mobile.jpg);
     background-repeat: no-repeat;
@@ -27,15 +27,13 @@
         (min-resolution: 2dppx) {
     
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                       url(../images/hero_mobile@2x.jpg);
-               
+                       url(../images/hero_mobile@2x.jpg);     
             
         }
 
-  
     @media screen and (min-width:$tablet) {
-        width: 768px;
-        max-height: 400px;
+        min-width: 768px;
+        min-height: 400px;
         padding-top: 118px;
         padding-bottom: 204px;
 
@@ -52,7 +50,7 @@
     }
 
     @media screen and (min-width:$desktop) {
-        width: 1600px;
+        min-width: 1200px;
         max-height: 600px;
         padding-top: 200px;
         padding-bottom: 200px;
