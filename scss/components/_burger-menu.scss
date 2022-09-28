@@ -8,6 +8,8 @@
     }
 
 &__modal{
+    transform:translateX(-100%);
+    transition: transform 400ms linear;
     position: fixed;
     z-index: 1000;    
     width: 100vw;
@@ -19,8 +21,12 @@
     // height: 796px;
     background-color: var(--bg-white);
     top: 0;
-    right: 0;
+    left: 0;
     padding:48px;
+
+    &.is-open{
+        transform: translateX(0);
+    }
 }
 
 
@@ -115,6 +121,7 @@ color: var(--accent-color);
 &__socials{
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
 
     &__link{
         font-weight: 500;
@@ -123,14 +130,13 @@ color: var(--accent-color);
         letter-spacing: 0.02em;
         color: #2196F3;}
 
-
-        &__link::after{
-        content:" ";
+        &__link:not(:last-child):after{
+        content: " ";
         border-right: 2px solid rgba(33, 33, 33, 0.2);
         transform: rotate(90deg);
         margin: 10px;
-        }
 
+        }
 
     }
 
