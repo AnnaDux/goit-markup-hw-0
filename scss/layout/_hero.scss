@@ -33,7 +33,7 @@
 
     @media screen and (min-width:$tablet) {
         min-width: 768px;
-        min-height: 400px;
+        height: 400px;
         padding-top: 118px;
         padding-bottom: 204px;
 
@@ -51,7 +51,7 @@
 
     @media screen and (min-width:$desktop) {
         min-width: 1200px;
-        max-height: 600px;
+        height: 600px;
         padding-top: 200px;
         padding-bottom: 200px;
 

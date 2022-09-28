@@ -1,17 +1,125 @@
 .burger{
     cursor: pointer;
     background-color: transparent;
-    border: transparent;
-    fill: var(--secondary-text);
-
-    @media screen and (min-width:$tablet) {
-            display: none;
+    border: none;
+    color:var(----black);
+    @media screen and(min-width:$tablet) {
+        display: none;
     }
+
+
+&__modal{
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: 796px;
+    background-color: var(--bg-white);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-bottom:48px;
+    padding-left: 40px;
+}
+
+
+&__close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 8px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        fill: var(--black);
+
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
+    }
+
+
+&__nav{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+
+}
+
+&__link--active{
+    font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.02em;
+    
+        
+color: var(--accent-color);
+}
+
+&__link{
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.02em;
+        color: var(--secondary-text);
+
+        &:not(:last-child)
+        {
+            margin-bottom: 32px;
+        }
+
 }
 
 
 
 
+
+
+&__contacts{
+    display: flex;
+    flex-direction: column;
+}
+
+&__tel{
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        color: #2196F3;
+        margin-bottom: 32px;
+
+}
+
+&__mail{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: #757575;
+        margin-bottom: 64px;
+    }
+
+
+
+&__socials{
+    display: flex;
+    align-items: flex-end;
+
+    &__link{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: #2196F3;}
+
+}
+
+
+}
 
 
 
